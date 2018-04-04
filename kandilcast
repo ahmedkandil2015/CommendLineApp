@@ -1,0 +1,16 @@
+#! /usr/bin/env php
+<?php
+
+use Acme\NewCommend;
+use Symfony\Component\Console\Application;
+
+
+require 'vendor/autoload.php';
+
+
+$app = new Application('KandilCast Demo','1.0');
+
+$app->add(new NewCommend(new GuzzleHttp\Client));
+
+$app->run();
+
