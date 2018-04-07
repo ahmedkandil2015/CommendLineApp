@@ -11,6 +11,6 @@ require 'vendor/autoload.php';
 $app = new Application('KandilCast Demo','1.0');
 
 $app->add(new NewCommend(new GuzzleHttp\Client));
-
+$app->add(new Acme\RenderCommand);
 $app->run();
 
